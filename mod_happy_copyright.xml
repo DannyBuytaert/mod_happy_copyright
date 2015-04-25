@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.4"
+	client="site"
+	method="upgrade">
+	<name>mod_happy_copyright</name>
+	<author>Danny Buytaert</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>Copyright (C) 2015 Danny Buytaert.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt
+	</license>
+	<authorEmail>danny@freakout.be</authorEmail>
+	<authorUrl>www.freakout.be</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_HAPPY_COPYRIGHT_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_happy_copyright">mod_happy_copyright.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_happy_copyright.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_happy_copyright.ini</language>
+		<language tag="en-GB">en-GB.mod_happy_copyright.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="showCopyright"
+					type="list"
+					description="MOD_HAPPY_COPYRIGHT_SHOWCOPYRIGHT_DESC"
+					label="MOD_HAPPY_COPYRIGHT_SHOWCOPYRIGHT_LABEL"
+					default="show_symbol">
+					<option value="hide">JHIDE</option>
+					<option value="show_symbol">MOD_HAPPY_COPYRIGHT_SYMBOL</option>
+					<option value="show_text_symbol">MOD_HAPPY_COPYRIGHT_TEXT_SYMBOL</option>
+				</field>
+				<field
+					name="@spacer"
+					type="spacer"
+					default=""
+					label=""
+					description="" />
+				<field
+					name="startYear"
+					type="text"
+					description="MOD_HAPPY_COPYRIGHT_STARTYEAR_DESC"
+					label="MOD_HAPPY_COPYRIGHT_STARTYEAR_LABEL" />
+				<field
+					name="showSitename"
+					type="radio"
+					description="MOD_HAPPY_COPYRIGHT_SHOWSITENAME_DESC"
+					label="MOD_HAPPY_COPYRIGHT_SHOWSITENAME_LABEL"
+					default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="@spacer"
+					type="spacer"
+					default=""
+					label=""
+					description="" />
+				<field
+					name="freeText"
+					type="text"
+					description="MOD_HAPPY_COPYRIGHT_FREETEXT_DESC"
+					label="MOD_HAPPY_COPYRIGHT_FREETEXT_LABEL" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server
+			type="extension"
+			priority="1"
+			name="mod_happy_copyright">http://www.joomlafreak.be/updates/mod_happy_copyright.xml
+		</server>
+	</updateservers>
+</extension>
