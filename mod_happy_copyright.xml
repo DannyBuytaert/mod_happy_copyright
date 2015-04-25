@@ -39,12 +39,6 @@
 					<option value="show_text_symbol">MOD_HAPPY_COPYRIGHT_TEXT_SYMBOL</option>
 				</field>
 				<field
-					name="@spacer"
-					type="spacer"
-					default=""
-					label=""
-					description="" />
-				<field
 					name="startYear"
 					type="text"
 					description="MOD_HAPPY_COPYRIGHT_STARTYEAR_DESC"
@@ -58,12 +52,6 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
-				<field
-					name="@spacer"
-					type="spacer"
-					default=""
-					label=""
-					description="" />
 				<field
 					name="freeText"
 					type="text"
